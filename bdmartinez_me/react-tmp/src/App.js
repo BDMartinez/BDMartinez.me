@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from "./components/Header"
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,10 +9,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">The Header will go here</h1>
+
+          <Header />
         </header>
         <p className="App-intro">
-          This is the main display goes here
+          The main display goes here
         </p>
       </div>
     );
