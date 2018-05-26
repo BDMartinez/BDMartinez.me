@@ -4,6 +4,8 @@ ul {
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -11,10 +13,10 @@ ul {
   height: 80px;
 }
 
-.App-logo, .social-media {
+/* .App-logo, .social-media {
   display: inline-flex;
   flex-direction: row;
-}
+} */
 
 .App-header {
   background-color: #222;
@@ -31,11 +33,12 @@ ul {
   font-size: large;
 }
 .header {
-  display: flex;
+  /* display: flex; */
   flex-flow: column;
   justify-content: space-between;
   text-align: center;
 }
+
 .nav-list {
   display: flex;
   flex-flow: row;
@@ -45,7 +48,7 @@ ul {
 .social-media {
   display: inline-flex;
   flex-direction: column;
-  flex-basis: auto;
+  align-content: flex-end;
 }
 
 /* .nav-item {
