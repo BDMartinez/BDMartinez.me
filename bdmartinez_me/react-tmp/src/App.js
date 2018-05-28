@@ -10,7 +10,7 @@ import {
   Divider
 } from "semantic-ui-react";
 import Header from "./components/Header";
-import MainDisplay from "./components/MainDisplay"
+import MainDisplay from "./components/MainDisplay";
 import logo from './logo.svg';
 import './App.css';
 

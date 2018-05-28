@@ -1,14 +1,12 @@
+// Dependencies
 import React, { Component } from "react";
 
+// Create the Social Media Class to house the Social Media Account Links
 export default class SocialMedia extends Component {
   render() {
     return(
       <div className="social-media">
-        <ul className="social-media-list">
-          <li className="social-media-item">Github</li>
-          <li className="social-media-item">Linkedin</li>
-          <li className="social-media-item">Placeholder?</li>
-        </ul>
+        <p>The Social Media Menu</p>
       </div>
     )
   }
