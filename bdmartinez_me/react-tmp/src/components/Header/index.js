@@ -11,7 +11,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header-desktop">
-        <Menu pointing secondary className="nav-bar">
+        <Menu pointing inverted secondary className="nav-bar">
           <Menu.Item
             as={NavLink}
             to="/Home"

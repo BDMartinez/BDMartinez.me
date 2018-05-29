@@ -22,10 +22,8 @@ class App extends Component {
       <div className="App">
         <Router>
           <div className="all">
-            <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
               <Header />
-            </header>
               <MainDisplay />
           </div>
           </Router>
