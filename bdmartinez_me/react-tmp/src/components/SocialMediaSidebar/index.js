@@ -26,7 +26,9 @@ export default class SocialMediaSidebar extends Component {
     // Render the sidebar
     return(
       <div className="social-media-sidebar">
-        <Button size="medium" className="social-media-button" onClick={this.toggleVisibility}>Follow Me</Button>
+      <Sidebar.Pusher>
+      <Button attached="right" color="black" size="medium" className="social-media-button" onClick={this.toggleVisibility}>Follow Me</Button>
+      </Sidebar.Pusher>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
             as={Menu}
