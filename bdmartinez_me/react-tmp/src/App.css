@@ -15,14 +15,13 @@ body {
 }
 
 .center-piece {
-  width: 580px;
+  width: 500px;
   font-family: 'Pacifico', 'cursive';
   text-shadow: -35px 30px 40px black;
   transform: rotate(-30deg);
   color: white;
   font-size: 12em;
   position: relative;
-  /* padding-right: */
   top: 130px;
   /* -webkit-box-reflect: below; */
   /* animation: pulse 0.5s 2; */
@@ -39,6 +38,14 @@ body {
 .item {
   text-decoration: none;
   color: white;
+}
+
+.intro-box {
+  display: inline-block;
+  color: white;
+  width: 200px;
+  height: auto;
+  padding-left: 10px;
 }
 
 .main-display {
@@ -63,6 +70,7 @@ body {
 .social-media-button {
   align-self: flex-end;
 }
+
 .social-media-sidebar {
   display: inline-flex;
   align-self: flex-end;
@@ -72,6 +80,7 @@ body {
 
 .ui.segment.pushable {
   background-color: #222;
+  height: 200;
   width: 100%;
   justify-content: flex-end;
 }
@@ -109,7 +118,7 @@ body {
 @media only screen and (min-width: 700px) {
 
   .center-piece {
-    left: 400px;
+    left: 410px;
   }
 
   body {

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default const IntroBox = {
+export default class IntroBox extends Component {
   render() {
     return(
-      <div>
-        <p>The Intro Box</p>
+      <div className="intro-box">
+        <h3 className="intro-header">The Intro Box</h3>
+        <br />
         <p>Arbitror nam labore appellat eu do nisi incididunt excepteur id litteris qui
         quae laboris se legam litteris sed veniam magna. Ea litteris ab vidisse nam
         laborum multos sunt an enim id nisi a incurreret ad summis, ut et fugiat
