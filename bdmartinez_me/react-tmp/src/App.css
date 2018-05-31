@@ -1,6 +1,5 @@
 /* Desktop */
 body {
-  /* background: #222; */
   background: radial-gradient(
     circle at center 400px,
     #222,
@@ -15,21 +14,26 @@ body {
   height: 80px;
 }
 
-.App-intro {
-  font-size: large;
-}
-
 .center-piece {
-    color: white;
+  width: 580px;
+  font-family: 'Pacifico', 'cursive';
+  text-shadow: -35px 30px 40px black;
+  transform: rotate(-30deg);
+  color: white;
+  font-size: 12em;
+  position: relative;
+  /* padding-right: */
+  top: 130px;
+  left: 240px;
+}
+.clearfix {
+  overflow: auto;
 }
 
-.header-desktop {
+/* .header-desktop {
   background-color: #222;
-  /* height: 150px; */
-  /* padding: 20px; */
-  /* color: white; */
   border: 2px black;
-}
+} */
 
 .item {
   text-decoration: none;
@@ -39,7 +43,10 @@ body {
 .main-display {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding-top: 20px;
+  height: 680px;
+  flex-wrap: nowrap;
 }
 
 .nav-bar {
@@ -53,10 +60,11 @@ body {
 }
 
 .social-media-button {
-  padding-top: 50px;
+  align-self: flex-end;
 }
 .social-media-sidebar {
   display: inline-flex;
+  align-self: flex-end;
   height: 215px;
   width: 230px;
 }
@@ -64,6 +72,7 @@ body {
 .ui.segment.pushable {
   background-color: #222;
   width: 100%;
+  justify-content: flex-end;
 }
 
 .top-headline {
@@ -74,4 +83,15 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 
+}
+
+@media only screen and (min-width: 700px) {
+
+  .header-desktop {
+    display: inherit;
+  }
+
+  .header-mobile {
+    display: none;
+  }
 }
