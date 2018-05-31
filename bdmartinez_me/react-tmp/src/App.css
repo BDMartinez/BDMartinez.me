@@ -25,6 +25,8 @@ body {
   /* padding-right: */
   top: 130px;
   left: 240px;
+  /* -webkit-box-reflect: below; */
+  /* animation: pulse 0.5s 2; */
 }
 .clearfix {
   overflow: auto;
@@ -84,6 +86,16 @@ body {
   to { transform: rotate(360deg); }
 
 }
+
+/* @keyframes pulse {
+  0% {
+
+  }
+  100% {
+    background-color: #FFFFFF;
+  }
+} */
+
 
 @media only screen and (min-width: 700px) {
 
