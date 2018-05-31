@@ -1,32 +1,43 @@
 // Dependencies
-import React, { Component } from "react";
-import {
-  Sidebar,
+import React, { Component } from 'react';
+import { Sidebar,
   Segment,
   Button,
   Menu,
   Image,
-  Icon
-} from "semantic-ui-react";
+  Icon,
+  Sticky } from 'semantic-ui-react';
 
 // Create the Social Media Class to house the Social Media Account Links
 export default class SocialMediaSidebar extends Component {
   // Set the intial visibility of the sidebar to false
   state = {
-    visible: false
-  }
+    visible: false,
+  };
   // Call the toggleVisibility method and pass it a callback that sets the state to visible
-  toggleVisibility = () => this.setState({
-    visible: !this.state.visible
-  })
+  toggleVisibility = () =>
+    this.setState({
+      visible: !this.state.visible,
+    });
+
   // Call the render method
   render() {
     // Store the visibility state in a variable
-    const  { visible } = this.state;
+    const { visible } = this.state;
+
     // Render the sidebar
-    return(
+    return (
       <div className="social-media-sidebar">
-        <Button circular color="black" size="tiny" className="social-media-button" onClick={this.toggleVisibility}>Follow Me</Button>
+
+          <Button
+            circular
+            color="black"
+            size="tiny"
+            className="social-media-button"
+            onClick={this.toggleVisibility}
+          >
+            Follow Me
+          </Button>
           <Sidebar.Pushable as={Segment}>
             <Sidebar
               as={Menu}
@@ -34,7 +45,7 @@ export default class SocialMediaSidebar extends Component {
               width="thin"
               direction="right"
               visible={visible}
-              icon='labeled'
+              icon="labeled"
               vertical
               inverted
             >
@@ -53,6 +64,6 @@ export default class SocialMediaSidebar extends Component {
             </Sidebar>
           </Sidebar.Pushable>
       </div>
-    )
+    );
   }
 }
